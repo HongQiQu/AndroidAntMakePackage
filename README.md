@@ -18,7 +18,7 @@ key.alias.password=123456
  4. 修改打包程序配置
 
  
-```java
+ ```java
 /**
  * 要打包的项目根目录
  */
@@ -39,7 +39,7 @@ private final static String reNameApk = "Project_";
  * 需要修改manifest文件的地方(占位符)
  */
 private final static String placeHolder = "@market@";
-```
+ ```
  
  5. 在 market.txt 中添加渠道信息，每个渠道占一行
  
