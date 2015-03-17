@@ -1,5 +1,5 @@
-# AndroidAntMakePackage
-Android批量打包
+# Ant批量打包APK
+以下步骤均在MAC系统下完成
 
 ##批量打包步骤：##
  1. 安装Ant等发开工具
@@ -53,7 +53,7 @@ private final static String placeHolder = "@market@";
 
 ## 开发者(Developer) ##
 
-* [Zhenguo Jin][44] - <jinzhenguo1990@gmail.com>
+* [Zhenguo Jin](http://ihongqiqu.com) - <jinzhenguo1990@gmail.com>
 
 
 ## License ##
