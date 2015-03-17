@@ -14,21 +14,31 @@ import org.apache.tools.ant.Project;
 import org.apache.tools.ant.ProjectHelper;
 
 /**
- *
- * @ClassName: AntTest
- * @Description: Ant自动打包程序
- * @author: ZhaoKaiQiang
- * @time: 2014-7-24下午5:47:04
- * @version: V1.0
+ * Android利用Ant批量打包程序
  */
-public class Main {
+public class AntMakeAPK {
     private Project project;
 
-    private final static String projectBasePath = "/Users/zhenguo/Documents/develop/github/MakePackageDemo";// 要打包的项目根目录
-    private final static String copyApkPath = "/Users/zhenguo/Documents/develop/apks";// 保存打包之后的apk的根目录
-    private final static String signApk = "MakePackageDemo-release.apk";// 这里的文件名必须是准确的项目名！就是Project工程的bin目录下面的apk安装包的名字
-    private final static String reNameApk = "Project_";// 重命名之后的项目名称前缀(地图项目不用改)
-    private final static String placeHolder = "@market@";// 需要修改manifest文件的地方(占位符)
+    /**
+     * 要打包的项目根目录
+     */
+    private final static String projectBasePath = "/Users/zhenguo/Documents/develop/github/AndroidAntMakePackage/MakePackageDemo";
+    /**
+     * 保存打包之后的apk的根目录
+     */
+    private final static String copyApkPath = "/Users/zhenguo/Documents/develop/apks";
+    /**
+     * 这里的文件名必须是准确的项目名！就是Project工程的bin目录下面的apk安装包的名字
+     */
+    private final static String signApk = "MakePackageDemo-release.apk";
+    /**
+     * 重命名之后的项目名称前缀(地图项目不用改)
+     */
+    private final static String reNameApk = "Project_";
+    /**
+     * 需要修改manifest文件的地方(占位符)
+     */
+    private final static String placeHolder = "@market@";
 
     @SuppressWarnings("resource")
     public static void main(String args[]) {
@@ -52,7 +62,7 @@ public class Main {
                         + "AndroidManifest.xml";
                 write(filePath, read(tempFilePath, flag.trim()));
                 // 执行打包命令
-                Main mytest = new Main();
+                AntMakeAPK mytest = new AntMakeAPK();
                 mytest.init(projectBasePath + File.separator + "build.xml",
                         projectBasePath);
                 mytest.runTarget("clean");

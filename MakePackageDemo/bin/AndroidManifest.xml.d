@@ -1,2 +1,2 @@
-/Users/zhenguo/Documents/develop/github/MakePackageDemo/bin/AndroidManifest.xml : \
-/Users/zhenguo/Documents/develop/github/MakePackageDemo/AndroidManifest.xml \
+/Users/zhenguo/Documents/develop/github/AndroidAntMakePackage/MakePackageDemo/bin/AndroidManifest.xml : \
+/Users/zhenguo/Documents/develop/github/AndroidAntMakePackage/MakePackageDemo/AndroidManifest.xml \
